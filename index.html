@@ -258,8 +258,7 @@ footer .fam{margin-top:10px;color:var(--muted);font-size:.95rem}
     </div>
     <div class="card">
       <h3><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>الوقت</h3>
-      <p>بعد صلاة المغرب مباشرةً</p>
-      <p class="sub">أذان المغرب الساعة ٥:٤٠ مساءً</p>
+      <p>الساعة ٦:٠٠ مساءً</p>
     </div>
     <div class="card" style="grid-column:1/-1">
       <h3><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>الموقع</h3>
@@ -358,8 +357,8 @@ document.getElementById('sealBtn').addEventListener('click',()=>{
   setTimeout(()=>{env.remove();},2400);
 });
 
-/* العد التنازلي — الخميس ٢٦ تشرين الثاني ٢٠٢٦ أذان المغرب ٥:٤٠ مساءً بتوقيت عمّان */
-const target=new Date('2026-11-26T17:40:00+03:00').getTime();
+/* العد التنازلي — الخميس ٢٦ تشرين الثاني ٢٠٢٦ الساعة ٦:٠٠ مساءً بتوقيت عمّان */
+const target=new Date('2026-11-26T18:00:00+03:00').getTime();
 const el={d:document.getElementById('d'),h:document.getElementById('h'),m:document.getElementById('m'),s:document.getElementById('s')};
 function pad(n){return String(n).padStart(2,'0')}
 function tick(){const diff=target-Date.now();if(diff<=0){document.getElementById('cd').style.display='none';document.getElementById('cdDone').style.display='block';return;}
